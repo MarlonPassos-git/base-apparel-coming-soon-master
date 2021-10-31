@@ -5,17 +5,13 @@
 @import "main";
 @import "form";
 
-
 body {
     font-family: 'Josefin Sans', sans-serif;
-
     display: grid;
     grid-template:
         "header"flex(84, 163) "img"flex(250, 500, 375, 900) "main"
     ;
-
     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
-
 
     @media (max-width: $tabletWidth) {
         align-items: start;
@@ -32,5 +28,6 @@ body {
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 60% 100%;
+        background-color: rgba(255, 244, 244, 0.2);
     }
 }

@@ -59,6 +59,13 @@ Your users should be able to:
 
 - Frontend Mentor - [@MarlonPassos-git](https://www.frontendmentor.io/profile/MarlonPassos-git)
 
+
+
+
+
+
+
+
 <style style="display: none">
     .icon {
         transform: translateY(3px);
@@ -105,6 +112,4 @@ Your users should be able to:
   from{width: 0;}
   to{width: 24em;}
 }
-
-
 </style>

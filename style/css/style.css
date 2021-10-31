@@ -252,6 +252,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 60% 100%;
+    background-color: rgba(255, 244, 244, 0.2);
   }
 }
 
