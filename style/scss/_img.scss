@@ -1,0 +1,26 @@
+.painting {
+    grid-area: img;
+    @media (max-width: $tabletWidth) {
+        height: flex(250, 500, 375, 900);   
+    }
+    
+
+    &__img {
+        width: 100%;
+        height: flex(250, 500, 375, 900);
+        object-fit: cover;
+        object-position: 0 -40px;
+
+        @media (max-width: $mobileWidth) {
+            object-position: 0 0;
+        }
+
+        @media (min-width: $tabletWidth) {
+            height: 100%;
+            max-height: 100vh;
+            object-fit: cover;  
+            object-position: center;
+
+        }
+    }
+}

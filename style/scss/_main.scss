@@ -1,0 +1,38 @@
+.main {
+    @include padding-main;
+    grid-area: main;
+
+    &__title {
+
+        font-size: flex(40, 64);
+        letter-spacing: flex(10.83, 17.32);
+        line-height: flex(42, 71);
+        color: $c__masala;
+        font-weight: 600;
+        text-align: center;
+        margin: rem(62) 0 flex(16, 32);
+
+        &--thin {
+            line-height: flex(42, 64);
+            color: $c__eunry;
+            font-weight: 300;
+        }
+
+        @media (min-width: $tabletWidth) {
+            text-align: left;
+        }
+    }
+
+    &__paragraph {
+        color: $c__eunry;
+        font-size: flex(14, 16);
+        line-height: flex(22, 28);
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: flex(32, 40);
+
+        @media (min-width: $tabletWidth) {
+            text-align: left;
+        }
+    }
+}

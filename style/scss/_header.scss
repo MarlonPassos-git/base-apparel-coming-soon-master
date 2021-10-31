@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: header;
+
+    height: flex(84, 163);
+    @include padding-main;
+
+    &__img {
+        width: flex(100, 158);
+        height: flex(20.89, 33);
+    }
+}

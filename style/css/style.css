@@ -1,0 +1,258 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list], ul, ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: header;
+  height: clamp(5.25rem, 3.5114rem + 7.4178vw, 10.1875rem);
+  padding: 0 clamp(2rem, -2.1373rem + 17.6526vw, 13.75rem) 0 clamp(2rem, -0.9269rem + 12.4883vw, 10.3125rem);
+}
+.header__img {
+  width: clamp(6.25rem, 4.9736rem + 5.446vw, 9.875rem);
+  height: clamp(1.305625rem, 1.0391rem + 1.1371vw, 2.0625rem);
+}
+
+.painting {
+  grid-area: img;
+}
+@media (max-width: 900px) {
+  .painting {
+    height: clamp(15.625rem, 4.4643rem + 47.619vw, 31.25rem);
+  }
+}
+.painting__img {
+  width: 100%;
+  height: clamp(15.625rem, 4.4643rem + 47.619vw, 31.25rem);
+  object-fit: cover;
+  object-position: 0 -40px;
+}
+@media (max-width: 375px) {
+  .painting__img {
+    object-position: 0 0;
+  }
+}
+@media (min-width: 900px) {
+  .painting__img {
+    height: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.main {
+  padding: 0 clamp(2rem, -2.1373rem + 17.6526vw, 13.75rem) 0 clamp(2rem, -0.9269rem + 12.4883vw, 10.3125rem);
+  grid-area: main;
+}
+.main__title {
+  font-size: clamp(2.5rem, 1.9718rem + 2.2535vw, 4rem);
+  letter-spacing: clamp(0.676875rem, 0.534rem + 0.6094vw, 1.0825rem);
+  line-height: clamp(2.625rem, 1.9868rem + 2.723vw, 4.4375rem);
+  color: #423A3A;
+  font-weight: 600;
+  text-align: center;
+  margin: 3.875rem 0 clamp(1rem, 0.6479rem + 1.5023vw, 2rem);
+}
+.main__title--thin {
+  line-height: clamp(2.625rem, 2.1408rem + 2.0657vw, 4rem);
+  color: #CE9898;
+  font-weight: 300;
+}
+@media (min-width: 900px) {
+  .main__title {
+    text-align: left;
+  }
+}
+.main__paragraph {
+  color: #CE9898;
+  font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+  line-height: clamp(1.375rem, 1.243rem + 0.5634vw, 1.75rem);
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+}
+@media (min-width: 900px) {
+  .main__paragraph {
+    text-align: left;
+  }
+}
+
+.form {
+  display: grid;
+  height: clamp(3rem, 2.8239rem + 0.7512vw, 3.5rem);
+  margin-bottom: 100px;
+  width: 100%;
+}
+.form > * {
+  grid-area: 1/-1;
+}
+.form__email {
+  align-self: start;
+  opacity: 0.5;
+  border-radius: 28px;
+  width: 100%;
+  height: clamp(3rem, 2.8239rem + 0.7512vw, 3.5rem);
+  border: solid 1px #CE9898;
+  padding-left: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  color: #423A3A;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.form__email::placeholder {
+  font-size: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+  line-height: 1.75rem;
+  color: #CE9898;
+}
+.form__email:focus:invalid {
+  border: solid 2px #F96464;
+}
+.form__email:focus-visible {
+  outline-offset: -1px;
+  outline: 2px solid #423A3A50;
+}
+.form__button {
+  background-image: linear-gradient(127deg, #f8bfbf -14%, #ee8b8b 86%);
+  box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
+  height: clamp(3rem, 2.8239rem + 0.7512vw, 3.5rem);
+  width: clamp(4rem, 3.2077rem + 3.3803vw, 6.25rem);
+  border: none;
+  border-radius: clamp(1.5rem, 1.412rem + 0.3756vw, 1.75rem);
+  justify-self: end;
+  cursor: pointer;
+  z-index: 1;
+  color: #FFFFFF;
+}
+.form__button:hover, .form__button:focus-visible {
+  transition: 0.3s;
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #fdd8d8, #eba2a2);
+}
+.form__button:focus-visible {
+  outline: none;
+}
+.form__error--icon {
+  width: 24px;
+  height: 24px;
+  color: #FFFFFF;
+  background-color: #F96464;
+  border-radius: 50%;
+  z-index: 1;
+  align-self: center;
+  display: none;
+  place-items: center;
+  justify-self: end;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-right: calc(clamp(4rem, 3.2077rem + 3.3803vw, 6.25rem) + clamp(0.5rem, 0.3239rem + 0.7512vw, 1rem));
+}
+.form__error--text {
+  display: none;
+  line-height: clamp(0.8125rem, 0.4824rem + 1.4085vw, 1.75rem);
+  font-size: 0.8125rem;
+  color: #F96464;
+  align-self: end;
+  font-weight: regular;
+  transform: translateY(clamp(1.3125rem, 0.9824rem + 1.4085vw, 2.25rem)) translateX(clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem));
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  grid-template: "header" clamp(5.25rem, 3.5114rem + 7.4178vw, 10.1875rem) "img" clamp(15.625rem, 4.4643rem + 47.619vw, 31.25rem) "main";
+  background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+@media (max-width: 900px) {
+  body {
+    align-items: start;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    grid-template: "header img" "main img"/1fr 42%;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 60% 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

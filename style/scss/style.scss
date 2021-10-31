@@ -1,0 +1,36 @@
+@import "reset";
+@import "base";
+@import "header";
+@import "img";
+@import "main";
+@import "form";
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+
+    display: grid;
+    grid-template:
+        "header"flex(84, 163) "img"flex(250, 500, 375, 900) "main"
+    ;
+
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+
+
+    @media (max-width: $tabletWidth) {
+        align-items: start;
+    }
+
+    @media (min-width: $tabletWidth) {
+        grid-template:
+            "header img"
+            "main img"
+            / 1fr 42%;
+        ;
+
+        background-image: url(/images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 60% 100%;
+    }
+}

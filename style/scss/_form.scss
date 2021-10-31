@@ -1,0 +1,93 @@
+.form {
+
+    display: grid;
+    height: flex(48, 56);
+    margin-bottom: 100px;
+    width: 100%;
+
+    &>* {
+        grid-area: 1 / -1;
+    }
+
+    &__email {
+
+        align-self: start;
+        opacity: 0.5;
+        border-radius: 28px;
+        width: 100%;
+        height: flex(48, 56);
+        border: solid 1px $c__eunry;
+        padding-left: flex(24, 32);
+        color: $c__masala;
+        font-size: rem(16);
+        font-weight: 700;
+
+        &::placeholder {
+            font-size: flex(14, 16);
+            line-height: rem(28);
+            color: $c__eunry;
+        }
+
+        &:focus:invalid {
+            border: solid 2px $c__red;
+        }
+
+        &:focus-visible {
+            outline-offset: -1px;
+            outline: 2px solid #423A3A50;
+        }
+    }
+
+    &__button {
+        background-image: linear-gradient(127deg, #f8bfbf -14%, #ee8b8b 86%);
+        box-shadow: 0 15px 20px 0 rgba(198, 110, 110, 0.25);
+        height: flex(48, 56);
+        width: flex(64, 100);
+        border: none;
+
+        border-radius: flex(24, 28);
+        justify-self: end;
+        cursor: pointer;
+        z-index: 1;
+        color: $c__white;
+
+        &:hover,
+        &:focus-visible {
+            transition: .3s;
+            transform: scale(1.04);
+            background: linear-gradient(135deg, #fdd8d8, #eba2a2);
+        }
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__error--icon {
+        width: 24px;
+        height: 24px;
+        color: $c__white;
+        background-color: $c__red;
+        border-radius: 50%;
+        z-index: 1;
+        align-self: center;
+        display: none;
+        place-items: center;
+        justify-self: end;
+        font-weight: 700;
+        font-size: rem(18);
+        margin-right: calc(#{flex(64, 100)} + #{flex(8, 16)});
+    }
+
+    &__error--text {
+        display: none;
+        line-height: flex(13, 28);
+        font-size: rem(13);
+        color: $c__red;
+        align-self:end;
+        font-weight: regular;
+        transform: translateY(flex(21, 36)) translateX(flex(24, 32));   
+
+    }
+
+}

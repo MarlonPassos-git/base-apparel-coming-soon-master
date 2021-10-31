@@ -1,0 +1,39 @@
+// Functions 
+@function rem($pixels, $contexto: 16) {
+    @return ($pixels / $contexto) * 1rem;
+}
+
+@function flex($minSize, $maxSize, $mobileWidth: 375,
+    $decktopWidth: 1440, $rem: 16) {
+
+    $a: $mobileWidth / $rem;
+    $b: $decktopWidth / $rem;
+    $c: $minSize / $rem;
+    $d: $maxSize / $rem;
+    $e: ($d - $c) / ($b - $a);
+    $f: $a * - $e + $c;
+    $g: round($f * 10000) / 10000;
+    $h: round($e * 1000000) / 10000 * 1vw;
+
+    @return clamp(#{$c * 1rem}, #{$g * 1rem} + #{$h}, #{$d * 1rem})
+}
+
+@mixin padding-main {
+    padding: 0 flex(32, 220) 0 flex(32, 165);
+}
+
+// Colors 
+
+
+$c__white: #FFFFFF;
+$c__masala: #423A3A;
+$c__red: #F96464;
+$c__eunry: #CE9898;
+$c__alto: #DBDBDB;
+$c__sea-pink: #EE8B8B;
+
+// widths
+
+$decktopWidth: 1100px;
+$tabletWidth: 900px;
+$mobileWidth: 375px;
