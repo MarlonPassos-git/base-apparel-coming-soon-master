@@ -32,8 +32,8 @@ Your users should be able to:
 <h2 id="links">🔗 Links</h2>
 
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-challenge-hub-xJ5su-oeA](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-challenge-hub-xJ5su-oeA)
+- Live Site URL: [https://base-apparel-coming-soon-master-eight.vercel.app/](https://base-apparel-coming-soon-master-eight.vercel.app/)
 
 
 <h2 id="built_with">👷‍♂️ Built with</h2>
