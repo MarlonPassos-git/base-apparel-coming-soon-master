@@ -15,7 +15,7 @@
 </div>
 
 <h2 id="the_challenge"> 🌋 The challenge</h2>
-<hr>
+
 
 Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
 
@@ -30,14 +30,14 @@ Your users should be able to:
 
 
 <h2 id="links">🔗 Links</h2>
-<hr>
+
 
 - Solution URL: []()
 - Live Site URL: []()
 
 
 <h2 id="built_with">👷‍♂️ Built with</h2>
-<hr>
+
 
 -  <img class="icon" src="https://img.icons8.com/color/20/000000/javascript--v2.png"/> JavaScript
 -  <img class="icon" src="https://img.icons8.com/color/20/000000/sass-avatar.png"/> Sass
@@ -46,7 +46,7 @@ Your users should be able to:
 
 
 <h2 id="what_i_learned">👨‍🎓 What I learned</h2>
-<hr>
+
 
 - understand how to do a custom styling for elements that are invalid
 - copy the css of a figma element
@@ -55,11 +55,11 @@ Your users should be able to:
 
 
 <h2 id="author">😬 Author</h2>
-<hr>
+
 
 - Frontend Mentor - [@MarlonPassos-git](https://www.frontendmentor.io/profile/MarlonPassos-git)
 
-<style>
+<style style="display: none">
     .icon {
         transform: translateY(3px);
         width: 20px;
