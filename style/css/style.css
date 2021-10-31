@@ -248,11 +248,10 @@ body {
 @media (min-width: 900px) {
   body {
     grid-template: "header img" "main img"/1fr 42%;
-    background-image: url(/images/bg-pattern-desktop.svg);
+    background-image: url(/images/bg-pattern-desktop.svg), linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 60% 100%;
-    background-color: rgba(255, 244, 244, 0.4);
   }
 }
 
