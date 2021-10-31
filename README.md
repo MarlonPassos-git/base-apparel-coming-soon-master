@@ -1,5 +1,5 @@
 
-<h1 class="line-1 anim-typewriter">Chalenger</h1>
+<h1 class="line-1 anim-typewriter">Base Apparel coming soon page challenge hub</h1>
 
 
 
@@ -17,7 +17,15 @@
 <h2 id="the_challenge"> 🌋 The challenge</h2>
 <hr>
 
-- Develop a page trying to make it as close as possible to the image made by the designer
+Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
+
+Your users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the form is submitted if:
+    - The input field is empty
+    - The email address is not formatted correctly
 
 
 
@@ -40,15 +48,10 @@
 <h2 id="what_i_learned">👨‍🎓 What I learned</h2>
 <hr>
 
-- 
+- understand how to do a custom styling for elements that are invalid
+- copy the css of a figma element
+- I understand that background-color with linear-gradient doesn't make any sense
 
-
-
-
-<h2 id="resources">📚 Resources</h2>
-<hr>
-
-- 
 
 
 <h2 id="author">😬 Author</h2>
